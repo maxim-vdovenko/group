@@ -1,0 +1,488 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+
+	<meta charset="UTF-8">
+	<title> photo-gallery </title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0, maximum-scale=1" />
+    
+     <link media="all" rel="stylesheet" type="text/css" href="css/fonts.css" />
+     <link media="all" rel="stylesheet" type="text/css" href="css/style.css" />
+     <link media="all" rel="stylesheet" type="text/css" href="css/slick.css" />
+     <link media="screen" rel="stylesheet" type="text/css" href="css/fancyBox/jquery.fancybox.css" />
+     
+
+     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script> 
+     <script type="text/javascript" src="js/control-page.js"></script>
+     <script type="text/javascript" src="js/slick.min.js"></script>
+     <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+
+	<script type="text/javascript" src="js/fancyBox/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="js/fancyBox/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/fancyBox/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/fancyBox/jquery.fancybox-thumbs.js"></script>
+	<script type="text/javascript" src="js/fancyBox/jquery.fancybox-media.js"></script>
+     
+           
+   
+</head>
+<body>
+
+
+  <div class="global-container">
+
+       <div class="total-container">
+
+
+            <!-- .hat -->
+            <div class="hat">
+
+                 <div class="hat__container">
+
+                      <div class="logo"><a href="javascript:void(0)"><img src="images/logo.png" alt="img" /></a></div>
+
+                      <div class="hatText">
+
+                           <div class="hatText-cont">
+
+                                <div class="menu">
+                                     <div class="buttonMobile"></div>
+                                     <ul>
+                                          <li><a href="javascript:void(0)">Головна</a></li>
+                                          <li>
+                                               <a href="javascript:void(0)">Про компанію</a>
+                                               <ul>
+                                                    <li><a href="javascript:void(0)">Історія компанії</a></li>
+                                                    <li><a href="javascript:void(0)">Структура компанії</a></li>
+                                                    <li><a href="javascript:void(0)">Менеджмент</a></li>
+                                                    <li><a href="javascript:void(0)">Новини компанії</a></li>
+                                                    <li><a href="javascript:void(0)">Вакансії</a></li>
+                                               </ul>
+                                          </li>
+                                          <li>
+                                               <a href="javascript:void(0)">Проекти</a>
+                                               <ul>
+                                                    <li><a href="javascript:void(0)">Здані проекти</a></li>
+                                                    <li><a href="javascript:void(0)">Діючі проекти</a></li>
+                                               </ul>
+                                          </li>
+                                          <li>
+                                               <a href="javascript:void(0)">Послуги</a>
+                                               <ul>
+                                                    <li><a href="javascript:void(0)">Генпдірядні роботи</a></li>
+                                                    <li><a href="javascript:void(0)">Проектні роботи</a></li>
+                                                    <li><a href="javascript:void(0)">Оренда спецтехніки</a></li>
+                                                    <li><a href="javascript:void(0)">Благоустрій</a></li>
+                                                    <li><a href="javascript:void(0)">Демонтаж</a></li>
+                                                    <li><a href="javascript:void(0)">Утепленя фасадів</a></li>
+                                               </ul>
+                                          </li>
+                                          <li class="active">
+                                               <a href="javascript:void(0)">Галерея</a>
+                                               <ul>
+                                                    <li class="active"><a href="javascript:void(0)">Фотогалерея</a></li>
+                                                    <li><a href="javascript:void(0)">Відеогалерея</a></li>
+                                               </ul>
+                                          </li>
+                                          <li><a href="javascript:void(0)">Контакти</a></li>
+                                     </ul>
+                                </div>
+
+                                <div class="languages">
+                                     <span class="languagesCurrent">UKR</span>
+                                     <ul>
+                                          <li class="active"><a href="javascript:void(0)">UKR</a></li>
+                                          <li><a href="javascript:void(0)">RUS</a></li>
+                                          <li><a href="javascript:void(0)">ENG</a></li>
+                                     </ul>
+                                </div>
+                                
+                                <div class="socialNetworks">
+                                     <ul>
+                                          <li><a class="socNet__yt" href="javascript:void(0)"></a></li>
+                                          <li><a class="socNet__fb" href="javascript:void(0)"></a></li>
+                                          <li><a class="socNet__tw" href="javascript:void(0)"></a></li>
+                                          <li><a class="socNet__gl" href="javascript:void(0)"></a></li>  
+                                     </ul>
+                                </div>  
+
+                           </div>
+
+                      </div>
+
+                 </div>
+
+            </div>     
+            <!-- END .hat -->    
+
+            
+            
+            
+            
+            <!-- .photoGallery -->
+            <div class="photoGallery">
+                 
+                 <div class="titleBox titleBox--photoGallery"><h1>Фотогалерея</h1></div>
+                 
+                 <div class="photoGallery__container">
+                      
+                      
+                    
+                      <!-- .accordion -->
+                      <div class="accordion">
+                           
+                           <div class="accordion__cont">
+                                <div class="accordion__box">
+                                     <div class="accordion__icon box-address"></div>
+                                     <span class="accordion__title">м. Львів, вул. Липова Алея</span>
+                                     <div class="accordion__arrow"></div>
+                                </div>
+                                <div class="accordion__data">
+                                     
+                                     
+                                     <div class="sliderPhoto">
+                                          
+                                          <div class="sliderPhoto-bl">
+                                          
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-1" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                         <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 12.01.16</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-1" href="images/photo-gallery/img-2.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 11.01.15</span>" >
+                                                         <img src="images/photo-gallery/img-2.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-1" href="images/projects/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 11.01.15</span>" >
+                                                         <img src="images/projects/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                          </div>
+                                     
+                                     </div>
+                                     
+                                     
+                                </div>
+                           </div>
+                           
+                           
+                           
+                           <div class="accordion__cont">
+                                <div class="accordion__box">
+                                     <div class="accordion__icon box-address"></div>
+                                     <span class="accordion__title">м. Львів, вул. Липова Алея</span>
+                                     <div class="accordion__arrow"></div>
+                                </div>
+                                <div class="accordion__data">
+                                     
+                                     
+                                     <div class="sliderPhoto">
+                                          
+                                          <div class="sliderPhoto-bl">
+                                          
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-2" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-2" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                          </div>
+                                     
+                                     </div>
+                                     
+                                     
+                                </div>
+                           </div>
+                           
+                           
+                           
+                           <div class="accordion__cont">
+                                <div class="accordion__box">
+                                     <div class="accordion__icon box-address"></div>
+                                     <span class="accordion__title">м. Львів, вул. Липова Алея</span>
+                                     <div class="accordion__arrow"></div>
+                                </div>
+                                <div class="accordion__data">
+                                     
+                                     
+                                     <div class="sliderPhoto">
+                                          
+                                          <div class="sliderPhoto-bl">
+                                          
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-3" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-3" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                          </div>
+                                     
+                                     </div>
+                                     
+                                     
+                                </div>
+                           </div>
+                           
+                           
+                           
+                           <div class="accordion__cont">
+                                <div class="accordion__box">
+                                     <div class="accordion__icon box-address"></div>
+                                     <span class="accordion__title">м. Львів, вул. Липова Алея</span>
+                                     <div class="accordion__arrow"></div>
+                                </div>
+                                <div class="accordion__data">
+                                     
+                                     
+                                     <div class="sliderPhoto">
+                                          
+                                          <div class="sliderPhoto-bl">
+                                          
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-4" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-4" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                          </div>
+                                     
+                                     </div>
+                                     
+                                     
+                                </div>
+                           </div>
+                           
+                           
+                           
+                           <div class="accordion__cont">
+                                <div class="accordion__box">
+                                     <div class="accordion__icon box-address"></div>
+                                     <span class="accordion__title">м. Львів, вул. Липова Алея</span>
+                                     <div class="accordion__arrow"></div>
+                                </div>
+                                <div class="accordion__data">
+                                     
+                                     
+                                     <div class="sliderPhoto">
+                                          
+                                          <div class="sliderPhoto-bl">
+                                          
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-5" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                               <div class="sliderPhoto__cont">
+                                                    <a class="fancybox" data-fancybox-group="gallery-5" href="images/photo-gallery/img-1.jpg" boxInfo="<span class='titleForm-info'>Будівництво</span><span class='titleForm-date'>Станом на 12.01.16</span>" >
+                                                        <img src="images/photo-gallery/img-1.jpg" alt="img" />
+                                                    </a>
+                                                    <div class="sliderPhoto__box">
+                                                         <div class="sliderPhoto-left">
+                                                              <span class="sliderPhoto-info">Будівництво</span>
+                                                              <span class="sliderPhoto-date">Станом на 11.01.15</span>
+                                                         </div>
+                                                         <div class="sliderPhoto-right">
+                                                              <span class="sliderPhoto-add">Додано 11 січня 09.43</span>
+                                                              <span class="sliderPhoto-date"><a href="javascript:void(0)">Переглянти альбом</a></span>
+                                                         </div>
+                                                    </div>
+                                               </div>
+                                               
+                                          </div>
+                                     
+                                     </div>
+                                     
+                                     
+                                </div>
+                           </div>
+                           
+                           
+         
+                         
+ 
+                      
+                      </div>
+                      <!-- END .photoGallery -->
+                      
+                      
+                      
+
+                      
+                 </div>
+            
+            </div>
+            <!-- END .history -->
+
+
+
+
+
+            <!-- .footer -->
+            <div class="footer">
+
+                 <div class="footer__container">
+
+                      <div class="footerInf">
+                           <p>вул. Героїв УПА, 73</p>
+                           <p>тел. +38 (000) 000 00 00</p>
+                           <p>e-mail: <a href="javascript:void(0)">example@gmail.com</a></p>
+                      </div>   
+
+                      <div class="socialNetworks">
+                           <ul>
+                                <li><a class="socNet__yt" href="javascript:void(0)"></a></li>
+                                <li><a class="socNet__fb" href="javascript:void(0)"></a></li>
+                                <li><a class="socNet__tw" href="javascript:void(0)"></a></li>
+                                <li><a class="socNet__gl" href="javascript:void(0)"></a></li>  
+                           </ul>
+                      </div> 
+
+                      <div class="logoFoot"><a href="javascript:void(0)"><img src="images/logo-footer.png" alt="img" /></a></div>
+
+                 </div>
+
+            </div>          
+            <!-- END .footer -->
+
+
+       </div>
+       
+  </div>       
+            
+            
+            
+</body>
+</html>
+            
+            
+            
+            
+            
+            
+            
+            
